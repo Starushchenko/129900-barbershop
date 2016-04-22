@@ -12,83 +12,105 @@
     <header class="main-header">
         <div class="container">
             <nav class="main-navigation">
-                <div class="small-logo">
-                    <img src="img/logo.png" width="111" height="24">
-                </div>
                 <ul>
+                    <li><a href="#"><img src="img/logo.png" alt="ГЛАВНАЯ" width="111" height="24"></a></li>
                     <li><a href="#">ИНФОРМАЦИЯ</a></li>
                     <li><a href="#">НОВОСТИ</a></li>
                     <li><a href="#">ПРАЙС-ЛИСТ</a></li>
                     <li><a href="#">МАГАЗИН</a></li>
                     <li><a href="#">КОНТАКТЫ</a></li>
                 </ul>
-                <div class="btn enter-btn">
-                    <a class="login" href="#">Вход</a>
-                </div>
             </nav>
+            <div class="btn enter-btn">
+                <a class="login" href="#">Вход</a>
+            </div>
         </div>
     </header>
     <main class="container">
         <h1>Средства для ухода</h1>
         <div class="breadcrumbs">
             <ul>
-                <li><span class="bredcrumps-element"><a href="#">ГЛАВНАЯ</a>
-                    </span></li>
-                <li><span class="bredcrumps-element"><a href="#">МАГАЗИН</a>
-                    </span></li>
-                <li><span class="bredcrumps-element"><a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
-                    </span></li>
+                <li>
+                    <div class="breadcrumbs-element"><a href="#">ГЛАВНАЯ</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="breadcrumbs-element"><a href="#">МАГАЗИН</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="breadcrumbs-element"><a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
+                    </div>
+                </li>
             </ul>
         </div>
         <div class="filter-form">
             <div class="filter filter-checkbox">
-               <form action="http://some.php" method="get">
-                <h2>ПРОИЗВОДИТЕЛИ:</h2>
-                   <ul>
-                    <li><input type="checkbox" id="baxter" checked>
-                        <label for="baxter">BAXTER OF CALIFORNIA</label></li>
+                <form action="http://some.php" method="get">
+                    <h2>ПРОИЗВОДИТЕЛИ:</h2>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="baxter" checked>
+                            <label for="baxter">BAXTER OF CALIFORNIA</label>
+                        </li>
 
-                    <li><input type="checkbox" id="natty">
-                        <label for="natty">MR NATTY</label></li>
+                        <li>
+                            <input type="checkbox" id="natty">
+                            <label for="natty">MR NATTY</label>
+                        </li>
 
-                    <li><input type="checkbox" id="suavecito"checked>
-                        <label for="suavecito">SUAVECITO</label></li>
+                        <li>
+                            <input type="checkbox" id="suavecito" checked>
+                            <label for="suavecito">SUAVECITO</label>
+                        </li>
 
-                    <li><input type="checkbox" id="malin">
-                        <label for="malin">MALIN+GOETZ</label></li>
+                        <li>
+                            <input type="checkbox" id="malin">
+                            <label for="malin">MALIN+GOETZ</label>
+                        </li>
 
-                    <li><input type="checkbox" id="murrays">
-                        <label for="murrays">MURRAY'S</label></li>
+                        <li>
+                            <input type="checkbox" id="murrays">
+                            <label for="murrays">MURRAY'S</label>
+                        </li>
 
-                    <li><input type="checkbox" id="american-crew"checked>
-                        <label for="mamerican-crew">AMERICAN CREW</label></li>
-                   </ul>
+                        <li>
+                            <input type="checkbox" id="american-crew" checked>
+                            <label for="mamerican-crew">AMERICAN CREW</label>
+                        </li>
+                    </ul>
                 </form>
             </div>
             <div class="filter filter-radio">
                 <form action="http://some.php" method="get">
-                <h2>ГРУППЫ ТОВАРОВ:</h2>
+                    <h2>ГРУППЫ ТОВАРОВ:</h2>
                     <ul>
-                   <li> <input type="radio" id="group-goods1" name="razor">
-                       <label for="group-goods1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label></li>
+                        <li>
+                            <input type="radio" id="group-goods1" name="razor">
+                            <label for="group-goods1">БРИТВЕННЫЕ ПРИНАДЛЕЖНОСТИ</label>
+                        </li>
 
-                   <li> <input type="radio" id="group-goods2" name="care" checked>
-                       <label for="group-goods2">СРЕДСТВА ДЛЯ УХОДА</label></li>
+                        <li>
+                            <input type="radio" id="group-goods2" name="care" checked>
+                            <label for="group-goods2">СРЕДСТВА ДЛЯ УХОДА</label>
+                        </li>
 
-                   <li> <input type="radio" id="group-goods3" name="accessory">
-                       <label for="group-goods3">АКСУССУАРЫ</label></li>
+                        <li>
+                            <input type="radio" id="group-goods3" name="accessory">
+                            <label for="group-goods3">АКСУССУАРЫ</label>
+                        </li>
                     </ul>
                     <div class="btn show-btn">
-            <input type="submit" value="ПОКАЗАТЬ">
+                        <input type="submit" value="ПОКАЗАТЬ">
+                    </div>
+                </form>
             </div>
-            </form>
         </div>
-        </div>
-        
+
         <div class="products">
             <article class="product">
                 <img src="img/product1.jpg" width="220" height="165">
-                <b>Набор для путешествий "BAXTER OF CALIFORNIA"</b>
+                <h2>Набор для путешествий "BAXTER OF CALIFORNIA"</h2>
                 <div class="price">
                     2 900 РУБ.
                 </div>
@@ -99,7 +121,7 @@
 
             <article class="product">
                 <img src="img/product2.jpg" width="220" height="165">
-                <b>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</b>
+                <h2>Увлажняющий кондиционер "BAXTER OF CALIFORNIA"</h2>
                 <div class="price">
                     750 РУБ.
                 </div>
@@ -110,7 +132,7 @@
 
             <article class="product">
                 <img src="img/product3.jpg" width="220" height="165">
-                <b>Гель для волос "SUAVECITO"</b>
+                <h2>Гель для волос "SUAVECITO"</h2>
                 <div class="price">
                     290 РУБ.
                 </div>
@@ -121,7 +143,7 @@
 
             <article class="product">
                 <img src="img/product4.jpg" width="220" height="165">
-                <b>Глина для укладки волос "AMERICAN CREW"</b>
+                <h2>Глина для укладки волос "AMERICAN CREW"</h2>
                 <div class="price">
                     500 РУБ.
                 </div>
@@ -132,7 +154,7 @@
 
             <article class="product">
                 <img src="img/product5.jpg" width="220" height="165">
-                <b>Гель для волос "AMERICAN CREW"</b>
+                <h2>Гель для волос "AMERICAN CREW"</h2>
                 <div class="price">
                     300 РУБ.
                 </div>
@@ -144,7 +166,7 @@
 
             <article class="product">
                 <img src="img/product6.jpg" width="220" height="165">
-                <b>Набор для бритья "BAXTER OF CALIFORNIA"</b>
+                <h2>Набор для бритья "BAXTER OF CALIFORNIA"</h2>
                 <div class="price">
                     3 900 РУБ.
                 </div>
