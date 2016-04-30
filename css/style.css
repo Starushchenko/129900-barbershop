@@ -4,6 +4,8 @@ body {
     color: #000;
     font-weight: bold;
     font-family: "PT Sans Narrow","Arial", sans-serif;
+    text-transform: uppercase;
+    background: url(../img/main-background.png) #f8f5f2;
 }
 
 h1 {
@@ -14,4 +16,82 @@ h1 {
 h2 {
     font-size: 24px;
     line-height: 30px;
+}
+
+ul {
+    padding: 0;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    border: 1px solid blue;
+}
+
+.main-header {
+    background: #000;
+}
+
+.main-header a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 15px 21px;
+    
+}
+
+.main-navigation {
+    display: inline-block;
+}
+
+.enter-btn {
+    display: inline-block;
+    margin-left: 133px;
+}
+
+.main-header li {
+    display: inline-block;
+}
+
+.breadcrumbs ul li {
+    display: inline-block;
+    line-height: 20px;
+    padding-right: 40px;
+    position: relative;
+}
+
+.breadcrumbs ul li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    transform: rotate(45deg);
+    right: 20px;
+    top: 6px;
+    margin-right: -5px;
+    
+    
+}
+
+.breadcrumbs ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: right;
+}
+        
+.filter-form {
+    float: left;
+}
+
+.products {
+    float: left;
 }
